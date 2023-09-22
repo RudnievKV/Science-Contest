@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{09E97584-A312-4A83-8599-5A679F2C2B93}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LB_2</RootNamespace>
+    <AssemblyName>LB_2</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Win32.TaskScheduler, Version=2.9.0.0, Culture=neutral, PublicKeyToken=e25603a88b3aa7da, processorArchitecture=MSIL">
+      <HintPath>..\packages\TaskScheduler.2.9.0\lib\net452\Microsoft.Win32.TaskScheduler.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminForms\ChangeProjectFormAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForms\ChangeProjectFormAdmin.Designer.cs">
+      <DependentUpon>ChangeProjectFormAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForms\CreateDirectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForms\CreateDirectionForm.Designer.cs">
+      <DependentUpon>CreateDirectionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForms\CreateThemeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForms\CreateThemeForm.Designer.cs">
+      <DependentUpon>CreateThemeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForms\AddUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForms\AddUserForm.Designer.cs">
+      <DependentUpon>AddUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForms\CreateDirectionAndThemeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForms\CreateDirectionAndThemeForm.Designer.cs">
+      <DependentUpon>CreateDirectionAndThemeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForms\ProjectWinnerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForms\ProjectWinnerForm.Designer.cs">
+      <DependentUpon>ProjectWinnerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DirectionAndThemes.cs" />
+    <Compile Include="AdminForms\DoSQLForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForms\DoSQLForm.Designer.cs">
+      <DependentUpon>DoSQLForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminForms\AdminForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminForms\AdminForm.Designer.cs">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JuryForms\JuryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JuryForms\JuryForm.Designer.cs">
+      <DependentUpon>JuryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistrationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrationForm.Designer.cs">
+      <DependentUpon>RegistrationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignIn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignIn.Designer.cs">
+      <DependentUpon>SignIn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\AddProjectFormUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\AddProjectFormUser.Designer.cs">
+      <DependentUpon>AddProjectFormUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\InformationProjectJoinForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\InformationProjectJoinForm.Designer.cs">
+      <DependentUpon>InformationProjectJoinForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\ChangeUserInformationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\ChangeUserInformationForm.Designer.cs">
+      <DependentUpon>ChangeUserInformationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\InformationProjectLeaveForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\InformationProjectLeaveForm.Designer.cs">
+      <DependentUpon>InformationProjectLeaveForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\ProjectDescriptionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\ProjectDescriptionForm.Designer.cs">
+      <DependentUpon>ProjectDescriptionForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserForms\UserMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserForms\UserMainForm.Designer.cs">
+      <DependentUpon>UserMainForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AdminForms\ChangeProjectFormAdmin.resx">
+      <DependentUpon>ChangeProjectFormAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForms\CreateDirectionForm.resx">
+      <DependentUpon>CreateDirectionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForms\CreateThemeForm.resx">
+      <DependentUpon>CreateThemeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForms\AddUserForm.resx">
+      <DependentUpon>AddUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForms\CreateDirectionAndThemeForm.resx">
+      <DependentUpon>CreateDirectionAndThemeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForms\DoSQLForm.resx">
+      <DependentUpon>DoSQLForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForms\AdminForm.resx">
+      <DependentUpon>AdminForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminForms\ProjectWinnerForm.resx">
+      <DependentUpon>ProjectWinnerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JuryForms\JuryForm.resx">
+      <DependentUpon>JuryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="RegistrationForm.resx">
+      <DependentUpon>RegistrationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignIn.resx">
+      <DependentUpon>SignIn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\AddProjectFormUser.resx">
+      <DependentUpon>AddProjectFormUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\InformationProjectJoinForm.resx">
+      <DependentUpon>InformationProjectJoinForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\ChangeUserInformationForm.resx">
+      <DependentUpon>ChangeUserInformationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\InformationProjectLeaveForm.resx">
+      <DependentUpon>InformationProjectLeaveForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\ProjectDescriptionForm.resx">
+      <DependentUpon>ProjectDescriptionForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserForms\UserMainForm.resx">
+      <DependentUpon>UserMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
